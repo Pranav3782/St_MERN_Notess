@@ -1,0 +1,239 @@
+## 🌈 Global Reset
+
+```css
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+```
+
+✅ Why used:
+
+* `margin: 0; padding: 0;` → Removes browser’s default spacing so we can style from scratch.
+* `box-sizing: border-box;` → Makes width & height calculations easier (padding/border included).
+* `font-family` → Sets a clean, modern font for the whole page.
+
+---
+
+## 🎨 Body Styling
+
+```css
+body {
+  background: linear-gradient(135deg, #6a11cb, #2575fc);
+  color: #333;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  min-height: 100vh;
+  padding: 40px 20px;
+}
+```
+
+✅ Why used:
+
+* `background: linear-gradient(...)` → Gives a modern gradient background (purple → blue).
+* `color: #333;` → Sets text color to dark gray for readability.
+* `display: flex; flex-direction: column;` → Arranges heading and box in vertical order.
+* `justify-content: flex-start; align-items: center;` → Keeps heading at top and centers horizontally.
+* `min-height: 100vh;` → Makes body fill full screen height.
+* `padding` → Adds breathing space around the content.
+
+---
+
+## 🏷 Heading (Title)
+
+```css
+.title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: white;
+  margin-bottom: 30px;
+  text-align: center;
+  text-shadow: 2px 2px 6px rgba(0,0,0,0.2);
+}
+```
+
+✅ Why used:
+
+* `font-size` & `font-weight` → Makes heading large and bold.
+* `color: white;` → Stands out on dark gradient background.
+* `margin-bottom` → Keeps space between heading and box.
+* `text-align: center;` → Centers text.
+* `text-shadow` → Adds glow/contrast so heading looks stylish.
+
+---
+
+## 📦 To-Do Container
+
+```css
+.todo-container {
+  background: white;
+  padding: 25px 30px;
+  border-radius: 20px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+  width: 100%;
+  max-width: 450px;
+  text-align: center;
+}
+```
+
+✅ Why used:
+
+* `background: white;` → Makes tasks clear against gradient.
+* `padding` → Adds inner spacing so content isn’t cramped.
+* `border-radius: 20px;` → Rounds corners for modern card style.
+* `box-shadow` → Creates floating card effect.
+* `width & max-width` → Ensures box isn’t too wide on large screens.
+* `text-align: center;` → Centers input & button.
+
+---
+
+## ⌨ Input Box
+
+```css
+#task {
+  width: 70%;
+  padding: 12px 15px;
+  border: 2px solid #ddd;
+  border-radius: 12px;
+  outline: none;
+  font-size: 1rem;
+  transition: 0.3s;
+}
+#task:focus {
+  border-color: #2575fc;
+  box-shadow: 0 0 8px rgba(37, 117, 252, 0.4);
+}
+```
+
+✅ Why used:
+
+* `width: 70%;` → Keeps input large but not too wide.
+* `padding` → Makes typing comfortable.
+* `border-radius` → Smooth rounded input.
+* `outline: none;` → Removes ugly blue outline on click.
+* `transition` → Smooth animation on focus.
+* `:focus` → Highlights input with blue border & glow to show it’s active.
+
+---
+
+## 🔘 Buttons (Add/Edit/Delete)
+
+```css
+button {
+  background: #2575fc;
+  color: white;
+  border: none;
+  padding: 12px 18px;
+  margin-left: 10px;
+  border-radius: 12px;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+button:hover {
+  background: #6a11cb;
+  transform: translateY(-2px);
+}
+```
+
+✅ Why used:
+
+* `background & color` → Stylish blue button with white text.
+* `border: none;` → Removes ugly borders.
+* `padding` → Bigger clickable area.
+* `border-radius` → Modern rounded button.
+* `cursor: pointer;` → Shows hand cursor when hovered.
+* `transition + hover` → Smooth color change & slight lift effect when hovered.
+
+---
+
+## 📋 Task List & Items
+
+```css
+#tasklist {
+  list-style: none;
+  margin-top: 20px;
+  padding: 0;
+  text-align: left;
+}
+#tasklist li {
+  background: #f9f9f9;
+  margin-bottom: 12px;
+  padding: 12px 15px;
+  border-radius: 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: 0.3s;
+}
+#tasklist li:hover {
+  background: #f0f4ff;
+  transform: scale(1.02);
+}
+```
+
+✅ Why used:
+
+* `list-style: none;` → Removes default bullets.
+* `margin-top` → Creates space before list starts.
+* `background` → Each task gets a card-like look.
+* `border-radius` → Smooth task boxes.
+* `display: flex; justify-content: space-between;` → Keeps task text left & buttons right.
+* `hover effect` → Light color & zoom effect for interactive feel.
+
+---
+
+## 🖊 Edit & ❌ Delete Buttons
+
+```css
+.edit-btn {
+  background: #00c9a7;
+  color: white;
+}
+.delete-btn {
+  background: #ff4b5c;
+  color: white;
+}
+.edit-btn,
+.delete-btn {
+  margin-left: 8px;
+  padding: 6px 12px;
+  border: none;
+  cursor: pointer;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  font-weight: bold;
+  transition: 0.3s;
+}
+.edit-btn:hover {
+  background: #00997a;
+}
+.delete-btn:hover {
+  background: #e60026;
+}
+```
+
+✅ Why used:
+
+* `different background colors` → Green for edit, red for delete (intuitive).
+* `padding & border-radius` → Small rounded buttons.
+* `cursor: pointer` → Shows interactivity.
+* `hover effects` → Slight color change for responsiveness.
+
+---
+
+🔥 In short:
+
+* **Flexbox** → to arrange heading & container neatly.
+* **Gradients & shadows** → to make it modern.
+* **Transitions & hover** → to make it interactive.
+* **Rounded corners** → for a sleek, app-like look.
+
+---
+
+Do you also want me to make a **line-by-line commented version of the CSS file** so you can directly see explanations inside the code?

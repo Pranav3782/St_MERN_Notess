@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <p id="value"></p>
+        <button id="increment">+</button>
+        <button id="decrement">-</button>
+    </div>
+    <script>
+        
+
+        const value=document.getElementById("value");
+        const increment=document.getElementById("increment");
+        const decrement=document.getElementById("decrement");
+
+        let count=0;
+        value.textContent=String(count)
+
+        increment.addEventListener("click", ()=>{
+            count++;
+            value.textContent=String(count);
+        })
+
+        decrement.addEventListener("click",()=>{
+            if(count===0){
+                return;
+            }
+            count--;
+            value.textContent=String(count);
+        })
+    </script>
+</body>
+</html>

@@ -1,0 +1,194 @@
+       * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 24px;
+        }
+
+        .header {
+            position: sticky;
+            top: 16px;
+            padding: 0 24px;
+        }
+
+        .main {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: rgba(255, 255, 255, 0.7);
+            border-radius: 100px;
+            padding: 12px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.04);
+            
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            text-decoration: none;
+            color: var(--text-dark);
+        }
+
+        .logo img {
+            height: 32px;
+        }
+
+        .text {
+            font-size: 20px;
+            font-weight: 700;
+            letter-spacing: 10px;
+        }
+
+        
+
+        .buttons {
+            
+            gap: 24px;
+            color: black;
+           
+            
+        }
+
+        .buttons a {
+            font-size: 14px;
+            font-weight: 500;
+            text-decoration: none;
+            color: black;
+            padding-bottom: 4px;
+            padding-left:50px ;
+            
+            
+        }
+        
+
+        .intro {
+            padding: 48px 0 80px 0;
+        }
+
+        .home {
+            display: flex;
+            flex-direction: column;
+            gap: 48px;
+            align-items: center;
+            text-align: center;
+            flex-direction: row;
+            padding-top: 80px;
+        
+        }
+        
+        .Text {
+            max-width: 600px;
+        }
+        
+        .Abovetitle {
+            display: inline-flex;
+            align-items: center;
+            background-color: white;
+            padding: 8px 16px;
+            font-size: 14px;
+            font-weight: 500;
+            color: purple;
+            margin-bottom: 16px;
+        }
+        
+        .Tittle {
+            font-size: 42px;
+            font-weight: 800;
+            margin-bottom: 16px;
+        }
+        
+       
+        .Subtitle {
+            font-size: 18px;
+            color: var(--text-light);
+            margin-bottom: 32px;
+        }
+        
+        
+        
+        .image {
+            max-width: 100%;
+            height: auto;
+            border-radius: 20px;
+            
+        }
+
+        
+        .problem-solution-section {
+            padding: 80px;
+            text-align: center;
+            padding-left: 170px;
+        }
+        
+        .Tittle1 {
+            font-size: 36px;
+            font-weight: 700;
+            margin-bottom: 16px;
+        }
+
+       
+
+        .cards {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 32px;
+            margin-top: 48px;
+            flex-direction: row;
+            padding-left: 70px;
+        }
+
+        .card {
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+            padding: 50px;
+            width: 100%;
+            max-width: 450px;
+            text-align: left;
+        }
+        
+        .title-card {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            font-size: 20px;
+            font-weight: 600;
+            margin-bottom: 24px;
+            width: 100%;
+            float: 100%;
+        }
+        .card-list {
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+            
+        }
+        
+        .card-list li {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            color: var(--text-light);
+            font-size: 15px;
+            
+        }
+
+        
+        
+
+        
+
+    
+       

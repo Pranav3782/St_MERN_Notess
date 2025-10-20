@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <h1 id="hOne"> Dom Element</h1>
+    <h2 id="hTwo">Dom Elemets</h2>
+    <img id="Image1" >
+    <h3 id="hThree">ClassList</h3>
+    <style>
+        .hTwo{
+            color: red;
+        }
+        .hThree{
+            color:green;
+        }
+        </style>
+</head>
+<body>
+    <script>
+        const hOne=document.getElementById("hOne");
+        console.log(hOne);
+        const span=document.createElement("span");
+        span.textContent="Welcome"
+        hOne.appendChild(span);
+        hOne.prepend(span);
+
+        // console.log(hTwo.getAttribute("id"));
+        hTwo.setAttribute("class","hTwo");
+        // console.log(hTwo.hasAttribute("class"));
+        hTwo.removeAttribute("class");
+        
+        const Image2=document.getElementById("Image1")
+        Image2.setAttribute("src","https://tse3.mm.bing.net/th/id/OIP.uHaqRdiMzWSMCR2LzsmhtQHaEZ?cb=12&rs=1pid=ImgDetMain&o=7&rm=3")
+        Image2.setAttribute("width","100px")
+        Image2.setAttribute("height","100px")
+        Image2.setAttribute("alt","Picture")
+        // console.log(Image2.hasAttribute("class"))
+
+        const Three=document.getElementById("hThree");
+        Three.classList.add("hThree");
+        console.log(Three.classList.contains("hThree"))
+        Three.classList.toggle("hThree")
+        console.log(Three.classList.contains("hThree"))
+        Three.classList.toggle("hThree")
+        console.log(Three.classList.contains("hThree"))
+
+
+
+        
+        
+    </script>
+    
+</body>
+</html>

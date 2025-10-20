@@ -1,0 +1,57 @@
+body {
+      margin: 0;
+      padding: 0;
+      background: black;
+      font-family: Arial, sans-serif;
+      color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .contact-box {
+      border: 3px solid red;
+      padding: 50px;
+      width: 320px;
+      border-radius: 10px;
+    }
+
+    .contact-box h2 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .contact-box label {
+      display: block;
+      margin: 10px 0 5px;
+    }
+
+    .contact-box input,
+    .contact-box textarea {
+      width: 100%;
+      padding: 8px;
+      margin-bottom: 15px;
+      border: none;
+      border-radius: 5px;
+    }
+
+    .contact-box textarea {
+      height: 80px;
+      resize: none;
+    }
+
+    .contact-box button {
+      width: 100%;
+      padding: 10px;
+      border: none;
+      border-radius: 5px;
+      background: crimson;
+      color: white;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    .contact-box button:hover {
+      background: darkred;
+    }
