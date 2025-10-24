@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+
+</head>
+<body>
+    
+   <div class="p-4">
+        <button id="btn" class="bg-red-500 hover:bg-red-600 px-4 py-2 cursor-pointer rounded-2xl" >Joke</button>
+        <p id="setUp" class="text-red-500">No Joke</p>
+        <p id="punchLine">No punchLine</p>
+    </div>    
+   
+    <script>
+        const setUp=document.getElementById("setUp");
+        const punchLine=document.getElementById("punchLine");
+        const btn=document.getElementById("btn");
+
+        async function fetchJoke(){
+            const response= await fetch("http://www.official-joke-api.appspot.com/random_joke");
+            console.log(response);
+            const data= await response.json();
+            console.log(data);
+            console.log(data.setup);
+            console.log(data.punchline);
+            setUp.textContent=data.setup;
+            punchLine.textContent=data.punchline;
+        }
+
+        btn.addEventListener("click", ()=>{
+            fetchJoke();
+        })
+    </script>
+    
+</body>
+</html>
